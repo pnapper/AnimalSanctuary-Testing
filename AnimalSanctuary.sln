@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalSanctuary", "AnimalSanctuary\AnimalSanctuary.csproj", "{F1C39C8F-7C54-4366-BEBE-713E8C87BBEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalSanctuary.Tests", "AnimalSanctuary.Tests\AnimalSanctuary.Tests.csproj", "{FA0E4A7D-4A42-448D-97F4-A7A5D3AA51E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1C39C8F-7C54-4366-BEBE-713E8C87BBEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C39C8F-7C54-4366-BEBE-713E8C87BBEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C39C8F-7C54-4366-BEBE-713E8C87BBEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C39C8F-7C54-4366-BEBE-713E8C87BBEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA0E4A7D-4A42-448D-97F4-A7A5D3AA51E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA0E4A7D-4A42-448D-97F4-A7A5D3AA51E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA0E4A7D-4A42-448D-97F4-A7A5D3AA51E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA0E4A7D-4A42-448D-97F4-A7A5D3AA51E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
