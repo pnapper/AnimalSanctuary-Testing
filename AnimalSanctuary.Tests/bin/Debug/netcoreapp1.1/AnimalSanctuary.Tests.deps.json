@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "eb2da96c600e9bfe49fdc554bb758bdb110917a9"
+    "signature": "0b300dec7006182a799b6cd7f1f9daaae98bbc01"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,10 +11,22 @@
           "AnimalSanctuary": "1.0.0",
           "MSTest.TestAdapter": "1.1.17",
           "MSTest.TestFramework": "1.1.17",
-          "Microsoft.NET.Test.Sdk": "15.3.0-preview-20170427-09"
+          "Microsoft.NET.Test.Sdk": "15.3.0-preview-20170427-09",
+          "Moq": "4.8.1"
         },
         "runtime": {
           "AnimalSanctuary.Tests.dll": {}
+        }
+      },
+      "castle.core/4.2.1": {
+        "dependencies": {
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.TraceSource": "4.3.0",
+          "System.Xml.XmlDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Castle.Core.dll": {}
         }
       },
       "microsoft.aspnetcore/1.1.2": {
@@ -975,6 +987,15 @@
           "lib/netstandard1.5/Microsoft.VisualStudio.Web.BrowserLink.dll": {}
         }
       },
+      "moq/4.8.1": {
+        "dependencies": {
+          "Castle.Core": "4.2.1",
+          "System.ValueTuple": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Moq.dll": {}
+        }
+      },
       "mstest.testadapter/1.1.17": {
         "dependencies": {
           "System.Diagnostics.TextWriterTraceListener": "4.3.0"
@@ -1152,6 +1173,11 @@
           "lib/netstandard1.0/System.Text.Encodings.Web.dll": {}
         }
       },
+      "system.valuetuple/4.3.0": {
+        "runtime": {
+          "lib/netstandard1.0/System.ValueTuple.dll": {}
+        }
+      },
       "system.xml.xmldocument/4.3.0": {
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
@@ -1195,6 +1221,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "castle.core/4.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XSNA0Gc1Zu33L+8+/3Tqt+aFu8QWS8UenVHZ7RenIP5wJfhoLrA4PnNscpxReeo5aBq8PDoGnV8rNaOzIOUo/w==",
+      "path": "castle.core/4.2.1",
+      "hashPath": "castle.core.4.2.1.nupkg.sha512"
     },
     "microsoft.aspnetcore/1.1.2": {
       "type": "package",
@@ -1749,6 +1782,13 @@
       "path": "microsoft.visualstudio.web.browserlink/1.1.2",
       "hashPath": "microsoft.visualstudio.web.browserlink.1.1.2.nupkg.sha512"
     },
+    "moq/4.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V1ujevE8l/gG3r0jKCltzUqhS8M2lxH8fqar3vJ5eJ6/r3RcXTN3TjoODGb6sbBX5yMuotajz5S6t8WJowTtpQ==",
+      "path": "moq/4.8.1",
+      "hashPath": "moq.4.8.1.nupkg.sha512"
+    },
     "mstest.testadapter/1.1.17": {
       "type": "package",
       "serviceable": true,
@@ -1930,6 +1970,13 @@
       "sha512": "sha512-tcfPv+q/nK+5EsAxCLauIOd0kL+lZsXQ4lPKRnh8ex6O1Rm8WAN3LtF2GDFHyD0glSmUpIrgTnLhHCkMAKo3Ug==",
       "path": "system.text.encodings.web/4.3.1",
       "hashPath": "system.text.encodings.web.4.3.1.nupkg.sha512"
+    },
+    "system.valuetuple/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
+      "path": "system.valuetuple/4.3.0",
+      "hashPath": "system.valuetuple.4.3.0.nupkg.sha512"
     },
     "system.xml.xmldocument/4.3.0": {
       "type": "package",
