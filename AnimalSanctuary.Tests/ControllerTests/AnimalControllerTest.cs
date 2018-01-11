@@ -13,6 +13,7 @@ namespace AnimalSanctuary.Tests.ControllerTests
     public class AnimalControllerTests
     {
         Mock<IAnimalRepository> mock = new Mock<IAnimalRepository>();
+        EFAnimalRepository db = new EFAnimalRepository(new TestDbContext());
 
         private void DbSetup()
         {
@@ -111,6 +112,47 @@ namespace AnimalSanctuary.Tests.ControllerTests
             // Assert
             Assert.IsInstanceOfType(resultView, typeof(ViewResult));
             Assert.IsInstanceOfType(model, typeof(Animal));
+        }
+        [TestMethod]
+        public void Mock_PostViewResultEdit_ViewResult()
+        {
+            // Arrange
+            Animal testAnimal = new Animal
+            {
+                AnimalId = 1,
+                Name = "Muffin"
+            };
+
+            DbSetup();
+            AnimalController controller = new AnimalController(mock.Object);
+
+            // Act
+            var resultView = controller.Edit(testAnimal) as ViewResult;
+
+
+            // Assert
+            Assert.IsInstanceOfType(resultView, typeof(ViewResult));
+
+        }
+        [TestMethod]
+        public void DB_CreatesNewEntries_Collection()
+        {
+            // Arrange
+            AnimalController controller = new AnimalController(db);
+            Animal testAnimal = new Animal();
+            testAnimal.Name = "Biscuit";
+            testAnimal.Species = "American Bison";
+            testAnimal.Sex = "Male";
+            testAnimal.HabitatType = "Prairies";
+            testAnimal.MedicalEmergency = false;
+            testAnimal.VeterinarianId = 1;
+
+            // Act
+            controller.Create(testAnimal);
+            var collection = (controller.Index() as ViewResult).ViewData.Model as List<Animal>;
+
+            // Assert
+            CollectionAssert.Contains(collection, testAnimal);
         }
     }
 }

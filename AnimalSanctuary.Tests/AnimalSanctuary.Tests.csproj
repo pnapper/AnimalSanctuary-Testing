@@ -21,6 +21,7 @@
   <ItemGroup>
     <Folder Include="ModelTests\" />
     <Folder Include="ControllerTests\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AnimalSanctuary\AnimalSanctuary.csproj" />

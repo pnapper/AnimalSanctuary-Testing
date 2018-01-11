@@ -6,7 +6,7 @@ namespace AnimalSanctuary.Models
     public class AnimalSanctuaryContext : DbContext
     {
         public virtual DbSet<Veterinarian> Veterinarians { get; set; }
-        public DbSet<Animal> Animals { get; set; }
+        public virtual DbSet<Animal> Animals { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder

@@ -11,7 +11,16 @@ namespace AnimalSanctuary.Models
 {
     public class EFAnimalRepository : IAnimalRepository
     {
-        AnimalSanctuaryContext db = new AnimalSanctuaryContext();
+        AnimalSanctuaryContext db;
+
+        public EFAnimalRepository()
+        {
+            db = new AnimalSanctuaryContext();
+        }
+        public EFAnimalRepository(AnimalSanctuaryContext thisDb)
+        {
+            db = thisDb;
+        }
 
         public IQueryable<Animal> Animals
         { get { return db.Animals; } }

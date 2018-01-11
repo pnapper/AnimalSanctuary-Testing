@@ -1,9 +1,14 @@
 ﻿<Properties StartupConfiguration="{F1C39C8F-7C54-4366-BEBE-713E8C87BBEC}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="AnimalSanctuary.Tests/ControllerTests/AnimalControllerTest.cs">
     <Files>
-      <File FileName="AnimalSanctuary/Controllers/AnimalController.cs" Line="35" Column="9" />
-      <File FileName="AnimalSanctuary.Tests/ControllerTests/AnimalControllerTest.cs" Line="1" Column="1" />
-      <File FileName="AnimalSanctuary.Tests/ModelTests/AnimalTests.cs" Line="45" Column="23" />
+      <File FileName="AnimalSanctuary.Tests/ControllerTests/AnimalControllerTest.cs" Line="157" Column="6" />
+      <File FileName="AnimalSanctuary.Tests/ModelTests/AnimalTests.cs" Line="20" Column="49" />
+      <File FileName="AnimalSanctuary.Tests/ModelTests/VeterinarianTests.cs" Line="1" Column="1" />
+      <File FileName="AnimalSanctuary/Models/Animal.cs" Line="11" Column="27" />
+      <File FileName="AnimalSanctuary.Tests/Models/TestDbContext.cs" Line="8" Column="9" />
+      <File FileName="AnimalSanctuary/Models/AnimalSanctuaryContext.cs" Line="10" Column="1" />
+      <File FileName="AnimalSanctuary/Models/Repositories/EFAnimalRepository.cs" Line="30" Column="36" />
+      <File FileName="AnimalSanctuary/AnimalSanctuary.csproj" Line="28" Column="7" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
@@ -12,8 +17,10 @@
             <Node name="AnimalSanctuary.Tests" expanded="True">
               <Node name="AnimalSanctuary" expanded="True">
                 <Node name="Tests" expanded="True">
-                  <Node name="AnimalTests" expanded="True">
-                    <Node name="GetHabitatType_ReturnsAnimalHabitatType_String" selected="True" />
+                  <Node name="ControllerTests" expanded="True">
+                    <Node name="AnimalControllerTests" expanded="True">
+                      <Node name="DB_CreatesNewEntries_Collection" selected="True" />
+                    </Node>
                   </Node>
                 </Node>
               </Node>
